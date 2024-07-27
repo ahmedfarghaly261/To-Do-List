@@ -25,6 +25,7 @@
               "src/assets"
             ],
             "styles": [
+              "../ToDoList/node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.css"
             ],
             "scripts": []
@@ -94,5 +95,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "f3540d60-568c-4998-8c18-6e0972e70486"
   }
 }

@@ -1,0 +1,43 @@
+<!-- <p>to-do-list works!</p> -->
+
+<div class="container">
+    <h2>To Do List APP</h2>
+    <hr>
+    <form (ngSubmit)="OnAdd(Form)" #Form="ngForm">
+        <div class="mb-3">
+            <label for="AddTaskF" class="form-label">New Task</label>
+            <input type="text" class="form-control" id="AddTaskF" aria-describedby=""
+                placeholder=" Add Task" ngModel name="addTask" required>
+            <!-- <div id="" class="form-text"></div> -->
+        </div>
+        <button type="submit" class="btn btn-primary ">ADD</button>
+    </form>
+
+    <hr>
+    <br>
+
+    <table class="table">
+        <thead>
+            <tr>
+
+                <th scope="col">Task Name</th>
+                <th scope="col">Done?</th>
+                <th scope="col">Remove</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let tr of taskArray; index as i ">
+
+                <td>{{tr.taskName}}</td>
+                <td>
+                    <div id="checkboxDiv" class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="checkbox">
+                        <label class="form-check-label" for="checkbox">Done</label>
+                    </div>
+                </td>
+                <td><button type="button" class="btn btn-danger" (click)="OnDelete(i)">Delete</button></td>
+            </tr>
+
+        </tbody>
+    </table>
+</div>

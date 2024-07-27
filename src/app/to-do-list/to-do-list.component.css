@@ -1,0 +1,12 @@
+
+
+#checkboxDiv {
+    margin-left: -2px;
+}
+#checkbox{ 
+    font-weight: bold;
+  border: solid black;
+}
+.container{
+  margin-top: 100px;
+}
