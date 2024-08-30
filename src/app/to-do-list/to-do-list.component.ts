@@ -9,17 +9,25 @@ import { from } from 'rxjs';
 })
 export class ToDoListComponent {
 
+
   taskArray=[{taskName:'demo',done:false}]
 
-  OnAdd(TaskForm:NgForm) {
+
+  OnAdd(TaskForm:NgForm) 
+  {
     console.log(TaskForm)
     this.taskArray.push({
       taskName: TaskForm.controls['addTask'].value,
       done:false
+
+
+
+
     })   
   }
   
   OnDelete(index :number){
+    console.log(index)
     console.log(index)
     this.taskArray.splice(index,1)
 
