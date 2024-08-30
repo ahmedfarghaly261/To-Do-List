@@ -29,6 +29,8 @@ export class ToDoListComponent {
   OnDelete(index :number){
     console.log(index)
     console.log(index)
+    console.log(index)
+    console.log(index)
     this.taskArray.splice(index,1)
 
   }
