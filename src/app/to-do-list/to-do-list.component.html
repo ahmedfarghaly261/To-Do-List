@@ -28,14 +28,14 @@
         <tbody>
             <tr *ngFor="let tr of taskArray; index as i ">
 
-                <td>{{tr.taskName}}</td>
+                <td class="task_name">{{tr.taskName}}</td>
                 <td>
                     <div id="checkboxDiv" class="mb-3 form-check">
                         <input type="checkbox" class="form-check-input" id="checkbox">
                         <label class="form-check-label" for="checkbox">Done</label>
                     </div>
                 </td>
-                <td><button type="button" class="btn btn-danger" (click)="OnDelete(i)">Delete</button></td>
+                <td><button type="button" class="btn btn-danger" (click)="OnDelete(i)">delete   <i class="fa-sharp fa-solid fa-trash"></i> </button></td>
             </tr>
 
         </tbody>
